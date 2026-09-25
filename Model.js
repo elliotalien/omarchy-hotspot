@@ -1,4 +1,4 @@
-// JavaScript helpers for elliotalien.hotspot plugin
+// JavaScript helpers for evcode.hotspot plugin
 
 function formatBytes(bytes) {
   if (bytes === undefined || bytes === null || isNaN(bytes) || bytes < 0) return "0 B"

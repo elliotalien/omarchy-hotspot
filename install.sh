@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script de instalación automática para el plugin elliotalien.hotspot en Omarchy
+# Script de instalación automática para el plugin evcode.hotspot en Omarchy
 
 set -euo pipefail
 
@@ -29,7 +29,7 @@ if [[ -z "$TARGET_HOME" || ! -d "$TARGET_HOME" ]]; then
   exit 1
 fi
 
-TARGET_DIR="$TARGET_HOME/.config/omarchy/plugins/elliotalien.hotspot"
+TARGET_DIR="$TARGET_HOME/.config/omarchy/plugins/evcode.hotspot"
 BIN_DIR="$TARGET_HOME/.local/bin"
 
 # 2. Verificar e instalar dependencias del sistema
@@ -173,7 +173,7 @@ chmod +x "$BIN_DIR/omarchy-hotspot"
 chown "$TARGET_USER":"$TARGET_USER" "$BIN_DIR/omarchy-hotspot" 2>/dev/null || true
 echo "[✓] Helper instalado en $BIN_DIR/omarchy-hotspot"
 
-# 7. Instalar Plugin en ~/.config/omarchy/plugins/elliotalien.hotspot
+# 7. Instalar Plugin en ~/.config/omarchy/plugins/evcode.hotspot
 mkdir -p "$TARGET_DIR/bin"
 cp "$SCRIPT_DIR/manifest.json" "$TARGET_DIR/"
 cp "$SCRIPT_DIR/Panel.qml" "$TARGET_DIR/"
@@ -188,8 +188,8 @@ echo "[✓] Plugin instalado en $TARGET_DIR"
 # 8. Validar y habilitar plugin en Omarchy
 if command -v omarchy >/dev/null 2>&1; then
   omarchy plugin validate "$TARGET_DIR" 2>/dev/null || true
-  omarchy plugin enable elliotalien.hotspot 2>/dev/null || true
-  echo "[✓] Plugin elliotalien.hotspot habilitado"
+  omarchy plugin enable evcode.hotspot 2>/dev/null || true
+  echo "[✓] Plugin evcode.hotspot habilitado"
 fi
 
 if command -v omarchy-shell >/dev/null 2>&1; then

@@ -9,8 +9,8 @@ import "Model.js" as Model
 
 Panel {
   id: root
-  moduleName: "elliotalien.hotspot"
-  ipcTarget: "elliotalien.hotspot"
+  moduleName: "evcode.hotspot"
+  ipcTarget: "evcode.hotspot"
   manageIpc: false
 
   implicitWidth: button.implicitWidth
@@ -241,7 +241,7 @@ Panel {
   }
 
   IpcHandler {
-    target: "elliotalien.hotspot"
+    target: "evcode.hotspot"
     function open() { root.open() }
     function close() { root.close() }
     function show() { root.open() }

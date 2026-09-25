@@ -1,4 +1,4 @@
-# Wi-Fi Hotspot & Repeater for Omarchy (`elliotalien.hotspot`)
+# Wi-Fi Hotspot & Repeater for Omarchy (`evcode.hotspot`)
 
 > Fork of [CarlosEvCode/omarchy-hotspot](https://github.com/CarlosEvCode/omarchy-hotspot) with multi-radio fixes: AP-capable radio auto-detection (no hardcoded `phy0`), fallback to the real AP interface when the virtual `ap0` is rejected by the driver, `dnsmasq` dependency, and `ufw` hotspot rules in the installer.
 
@@ -78,7 +78,7 @@ The script will automatically:
 1. Validate required system dependencies.
 2. Configure passwordless `sudoers.d` rules for virtual interface handling (`ap0`).
 3. Deploy the backend CLI helper to `~/.local/bin/omarchy-hotspot`.
-4. Install the plugin into `~/.config/omarchy/plugins/elliotalien.hotspot/`.
+4. Install the plugin into `~/.config/omarchy/plugins/evcode.hotspot/`.
 5. Reload the Omarchy Shell.
 
 ---
