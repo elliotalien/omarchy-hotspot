@@ -56,7 +56,7 @@ sudo pacman -S --needed networkmanager iw iproute2 qrencode dnsmasq
 ### Via Omarchy Plugin Manager
 
 ```bash
-omarchy plugin add https://github.com/elliotalien/omarchy-hotspot-fixed.git --enable
+omarchy plugin add https://github.com/elliotalien/omarchy-hotspot.git --enable
 omarchy restart shell
 ```
 
@@ -68,8 +68,8 @@ omarchy restart shell
 Clone the repository and run the included installation script:
 
 ```bash
-git clone https://github.com/elliotalien/omarchy-hotspot-fixed.git
-cd omarchy-hotspot-fixed
+git clone https://github.com/elliotalien/omarchy-hotspot.git
+cd omarchy-hotspot
 chmod +x install.sh
 ./install.sh
 ```
